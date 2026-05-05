@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Formulario</title>
 
- <link rel="stylesheet" href="../css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
-<body class="bg-dark bg-gradient"> 
+<body class="bg-light bg-gradient">
 
-<div class="container py-5"> 
+    <div class="container py-5">
 
- <div class="row justify-content-center"> 
+        <div class="row justify-content-center">
 
-  <div class="col-12 col-md-10 col-lg-8"> 
-      <div class="card shadow-lg rounded-4"> 
-      <div class="card-body p-4">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-4">
 
-          <h3 class="text-center mb-4 text-primary fw-bold"> 
+                        <h3 class="text-center mb-4 text-primary fw-bold">
+                            Formulario de Contacto
+                        </h3>
 
-         <form> 
 
-         <div class="row"> 
+                        <form>
 
-            <div class="col-12 col-md-6 mb-3">
-                  <label class="form-label">Nombre</label>
-                 <input type="text" class="form-control">
+                            <div class="row">
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-label">Correo</label>
+                                    <input type="email" class="form-control">
+                                </div>
+
+                            </div>
+
+                            <textarea class="form-control" rows="5"></textarea>
+
+                            <div class="row">
+
+                                <div class="col-12 col-md-6 order-md-1">
+
+                                    <!--Estado civil-->
+                                    <div class="form-check">
+                                        <p>Estado civil </p>
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Soltero</label>
+
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Casado</label>
+
+                                    </div>
+
+
+                                </div>
+                                <!--Pais-->
+                                <div class="col-12 col-md-6 order-md-2">
+                                    <p> Pais</p>
+                                    <!--ej13-->
+                                    <select class="form-select">
+                                        <option>Argentina</option>
+                                        <option>España</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <!--ej14-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input">
+                                <label class="form-check-label">Acepto términos</label>
+                            </div>
+
+                            <!--ej15-->
+                            <div class="text-center">
+
+                                <button class="btn btn-success px-5 py-2 fw-bold shadow">
+                                    Enviar
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
-
-       <div class="col-12 col-md-6 mb-3">
-        <label class="form-label">Correo</label>
-        <input type="email" class="form-control">
-       </div>
-
-      </div>
-
-      <textarea class="form-control" rows="5"></textarea> 
-
-      <div class="row"> 
-
-       <div class="col-12 col-md-6">
-
-
-        <div class="form-check"> 
-         <input type="radio" class="form-check-input">
-         <label class="form-check-label">Soltero</label>
         </div>
-
-       </div>
-
-       <div class="col-12 col-md-6">
-
-        <!--ej13--> 
-        <select class="form-select"> 
-         <option>Argentina</option>
-         <option>España</option>
-        </select>
-
-       </div>
-
-      </div>
-       <!--ej14--> 
-      <div class="form-check"> 
-         <input type="checkbox" class="form-check-input">
-          <label class="form-check-label">Acepto términos</label>
-      </div>
-
-      <!--ej15--> 
-      <div class="text-center"> 
-
-       <button class="btn btn-primary px-5 py-2 fw-bold shadow"> 
-        Enviar
-
-       </button>
-
-      </div>
-
-     </form>
-
     </div>
-   </div>
-
-  </div>
- </div>
-</div>
 
 </body>
+
 </html>
